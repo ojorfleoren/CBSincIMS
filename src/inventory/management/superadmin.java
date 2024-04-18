@@ -1373,7 +1373,7 @@ public void transferReleaseItem() {
                 // Check if the item already exists in the destination area with the same location
                 int existingQty = 0;
                 String selectExistingSql = "SELECT Qty FROM " + selectedArea + " WHERE ItemID = ?";
-                conn = DriverManager.getConnection("jdbc:sqlite:ITEMS.db");
+                conn = DriverManager.getConnection("jdbc:sqlite:CELO_Database.db");
                 try (PreparedStatement selectExistingPst = conn.prepareStatement(selectExistingSql)) {
                     selectExistingPst.setInt(1, itemID);
                     ResultSet existingRs = selectExistingPst.executeQuery();
@@ -3414,6 +3414,8 @@ public static void printDisposal(JTable tblDisposal) {
                 return canEdit [columnIndex];
             }
         });
+        tblDataInfo.setRowHeight(21);
+        tblDataInfo.setShowGrid(true);
         jScrollPane1.setViewportView(tblDataInfo);
         if (tblDataInfo.getColumnModel().getColumnCount() > 0) {
             tblDataInfo.getColumnModel().getColumn(0).setResizable(false);
@@ -3634,7 +3636,7 @@ public static void printDisposal(JTable tblDisposal) {
                         .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnCanceled, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
 
         tabPane.addTab("tab2", jPanel3);
@@ -3712,6 +3714,8 @@ public static void printDisposal(JTable tblDisposal) {
                 return canEdit [columnIndex];
             }
         });
+        tblAccounts.setRowHeight(21);
+        tblAccounts.setShowGrid(true);
         jScrollPane7.setViewportView(tblAccounts);
         if (tblAccounts.getColumnModel().getColumnCount() > 0) {
             tblAccounts.getColumnModel().getColumn(0).setResizable(false);
@@ -3888,7 +3892,7 @@ public static void printDisposal(JTable tblDisposal) {
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGap(512, 512, 512)
                         .addComponent(jLabel17)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
             .addComponent(jPanel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel11Layout.setVerticalGroup(
@@ -4025,6 +4029,9 @@ public static void printDisposal(JTable tblDisposal) {
                 return canEdit [columnIndex];
             }
         });
+        tblStock.setRowHeight(24);
+        tblStock.setShowGrid(true);
+        tblStock.setShowVerticalLines(true);
         jScrollPane2.setViewportView(tblStock);
         if (tblStock.getColumnModel().getColumnCount() > 0) {
             tblStock.getColumnModel().getColumn(0).setResizable(false);
@@ -4120,8 +4127,8 @@ public static void printDisposal(JTable tblDisposal) {
                         .addComponent(jLabel27)
                         .addComponent(btnPrint_stock)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 720, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 728, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         txtSearchStock.getAccessibleContext().setAccessibleName("");
@@ -4155,6 +4162,8 @@ public static void printDisposal(JTable tblDisposal) {
                 return canEdit [columnIndex];
             }
         });
+        tblRelease.setRowHeight(24);
+        tblRelease.setShowGrid(true);
         jScrollPane8.setViewportView(tblRelease);
         if (tblRelease.getColumnModel().getColumnCount() > 0) {
             tblRelease.getColumnModel().getColumn(0).setResizable(false);
@@ -4230,7 +4239,7 @@ public static void printDisposal(JTable tblDisposal) {
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel19Layout.createSequentialGroup()
-                .addGap(2, 2, 2)
+                .addGap(0, 0, 0)
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(btnTransferRelease)
@@ -4240,7 +4249,7 @@ public static void printDisposal(JTable tblDisposal) {
                         .addComponent(jLabel32, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(txtSearchRelease, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 716, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 728, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -4274,6 +4283,8 @@ public static void printDisposal(JTable tblDisposal) {
             }
         });
         tblChecking.setToolTipText("");
+        tblChecking.setRowHeight(24);
+        tblChecking.setShowGrid(true);
         tblChecking.getTableHeader().setReorderingAllowed(false);
         jScrollPane3.setViewportView(tblChecking);
         if (tblChecking.getColumnModel().getColumnCount() > 0) {
@@ -4361,7 +4372,7 @@ public static void printDisposal(JTable tblDisposal) {
                             .addComponent(jLabel34, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtSearchChecking, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 717, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 728, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -4394,6 +4405,8 @@ public static void printDisposal(JTable tblDisposal) {
                 return canEdit [columnIndex];
             }
         });
+        tblReturn.setRowHeight(24);
+        tblReturn.setShowGrid(true);
         jScrollPane4.setViewportView(tblReturn);
         if (tblReturn.getColumnModel().getColumnCount() > 0) {
             tblReturn.getColumnModel().getColumn(0).setResizable(false);
@@ -4482,8 +4495,8 @@ public static void printDisposal(JTable tblDisposal) {
                                 .addComponent(jLabel35, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(txtSearchReturn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 721, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 728, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         tabSuperadmin.addTab("tab3", jPanel16);
@@ -4515,6 +4528,8 @@ public static void printDisposal(JTable tblDisposal) {
                 return canEdit [columnIndex];
             }
         });
+        tblRepair.setRowHeight(24);
+        tblRepair.setShowGrid(true);
         jScrollPane5.setViewportView(tblRepair);
         if (tblRepair.getColumnModel().getColumnCount() > 0) {
             tblRepair.getColumnModel().getColumn(0).setResizable(false);
@@ -4599,7 +4614,7 @@ public static void printDisposal(JTable tblDisposal) {
                             .addComponent(jLabel36, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtSearchRepair, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 717, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 728, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -4632,6 +4647,8 @@ public static void printDisposal(JTable tblDisposal) {
                 return canEdit [columnIndex];
             }
         });
+        tblDisposal.setRowHeight(24);
+        tblDisposal.setShowGrid(true);
         jScrollPane6.setViewportView(tblDisposal);
         if (tblDisposal.getColumnModel().getColumnCount() > 0) {
             tblDisposal.getColumnModel().getColumn(0).setResizable(false);
@@ -4695,7 +4712,7 @@ public static void printDisposal(JTable tblDisposal) {
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(0, 0, 0)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnPrint_disposal)
                     .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4704,8 +4721,8 @@ public static void printDisposal(JTable tblDisposal) {
                             .addComponent(jLabel40, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtSearchDisposal, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42))
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 728, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(23, 23, 23))
         );
 
         tabSuperadmin.addTab("tab5", jPanel18);
@@ -4769,7 +4786,7 @@ public static void printDisposal(JTable tblDisposal) {
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGap(14, 14, 14)
                         .addComponent(btnStock, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(2, 2, 2)
                         .addComponent(btnChecking1)
                         .addGap(2, 2, 2)
                         .addComponent(btnChecking)

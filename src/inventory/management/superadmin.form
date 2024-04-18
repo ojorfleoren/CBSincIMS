@@ -1116,7 +1116,7 @@
                                   <Component id="btnDelete" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="17" max="32767" attributes="0"/>
+                          <EmptySpace pref="63" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1315,6 +1315,8 @@
                             </Column>
                           </TableColumnModel>
                         </Property>
+                        <Property name="rowHeight" type="int" value="21"/>
+                        <Property name="showGrid" type="boolean" value="true"/>
                         <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                           <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                         </Property>
@@ -1606,7 +1608,7 @@
                                           <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="30" max="32767" attributes="0"/>
+                                  <EmptySpace pref="14" max="32767" attributes="0"/>
                               </Group>
                               <Component id="jPanel32" max="32767" attributes="0"/>
                           </Group>
@@ -1830,6 +1832,8 @@
                                     </Column>
                                   </TableColumnModel>
                                 </Property>
+                                <Property name="rowHeight" type="int" value="21"/>
+                                <Property name="showGrid" type="boolean" value="true"/>
                                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                                 </Property>
@@ -2098,7 +2102,7 @@
                                   <Group type="102" attributes="0">
                                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                                       <Component id="btnStock" min="-2" pref="86" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                                       <Component id="btnChecking1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                                       <Component id="btnChecking" min="-2" max="-2" attributes="0"/>
@@ -2197,8 +2201,8 @@
                                           </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jScrollPane2" min="-2" pref="720" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jScrollPane2" min="-2" pref="728" max="-2" attributes="0"/>
+                                      <EmptySpace pref="23" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -2272,6 +2276,9 @@
                                         </Column>
                                       </TableColumnModel>
                                     </Property>
+                                    <Property name="rowHeight" type="int" value="24"/>
+                                    <Property name="showGrid" type="boolean" value="true"/>
+                                    <Property name="showVerticalLines" type="boolean" value="true"/>
                                     <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                                       <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                                     </Property>
@@ -2395,7 +2402,7 @@
                             <DimensionLayout dim="1">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="103" groupAlignment="3" attributes="0">
                                               <Component id="btnTransferRelease" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -2408,7 +2415,7 @@
                                           </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jScrollPane8" min="-2" pref="716" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane8" min="-2" pref="728" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -2501,6 +2508,8 @@
                                         </Column>
                                       </TableColumnModel>
                                     </Property>
+                                    <Property name="rowHeight" type="int" value="24"/>
+                                    <Property name="showGrid" type="boolean" value="true"/>
                                     <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                                       <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                                     </Property>
@@ -2624,7 +2633,7 @@
                                           </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jScrollPane3" min="-2" pref="717" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane3" min="-2" pref="728" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -2712,6 +2721,8 @@
                                         </Column>
                                       </TableColumnModel>
                                     </Property>
+                                    <Property name="rowHeight" type="int" value="24"/>
+                                    <Property name="showGrid" type="boolean" value="true"/>
                                     <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                                       <TableHeader reorderingAllowed="false" resizingAllowed="true"/>
                                     </Property>
@@ -2838,8 +2849,8 @@
                                               <EmptySpace max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <Component id="jScrollPane4" min="-2" pref="721" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane4" min="-2" pref="728" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -2925,6 +2936,8 @@
                                         </Column>
                                       </TableColumnModel>
                                     </Property>
+                                    <Property name="rowHeight" type="int" value="24"/>
+                                    <Property name="showGrid" type="boolean" value="true"/>
                                     <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                                       <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                                     </Property>
@@ -3045,7 +3058,7 @@
                                           </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jScrollPane5" min="-2" pref="717" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane5" min="-2" pref="728" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -3132,6 +3145,8 @@
                                         </Column>
                                       </TableColumnModel>
                                     </Property>
+                                    <Property name="rowHeight" type="int" value="24"/>
+                                    <Property name="showGrid" type="boolean" value="true"/>
                                     <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                                       <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                                     </Property>
@@ -3236,7 +3251,7 @@
                             <DimensionLayout dim="1">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="1" attributes="0">
                                           <Component id="btnPrint_disposal" min="-2" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -3248,8 +3263,8 @@
                                           </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jScrollPane6" min="-2" pref="709" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane6" min="-2" pref="728" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -3335,6 +3350,8 @@
                                         </Column>
                                       </TableColumnModel>
                                     </Property>
+                                    <Property name="rowHeight" type="int" value="24"/>
+                                    <Property name="showGrid" type="boolean" value="true"/>
                                     <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                                       <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                                     </Property>

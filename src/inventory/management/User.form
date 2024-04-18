@@ -777,7 +777,7 @@
                                       </Group>
                                   </Group>
                                   <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane1" min="-2" pref="709" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane1" min="-2" pref="730" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -852,6 +852,8 @@
                                     </Column>
                                   </TableColumnModel>
                                 </Property>
+                                <Property name="rowHeight" type="int" value="24"/>
+                                <Property name="showGrid" type="boolean" value="true"/>
                                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                                 </Property>
@@ -924,7 +926,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                   <Component id="jButton15" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="1086" max="32767" attributes="0"/>
+                                  <EmptySpace pref="1091" max="32767" attributes="0"/>
                                   <Component id="jLabel44" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                                   <Component id="txtSearchRelease" min="-2" pref="150" max="-2" attributes="0"/>
@@ -935,7 +937,7 @@
                               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                      <Component id="jScrollPane8" pref="1425" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane8" pref="1430" max="32767" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -952,13 +954,13 @@
                                           <Component id="txtSearchRelease" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                                      <Component id="jScrollPane8" min="-2" pref="707" max="-2" attributes="0"/>
-                                      <EmptySpace pref="52" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane8" min="-2" pref="730" max="-2" attributes="0"/>
+                                      <EmptySpace pref="33" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -1051,6 +1053,8 @@
                                     </Column>
                                   </TableColumnModel>
                                 </Property>
+                                <Property name="rowHeight" type="int" value="24"/>
+                                <Property name="showGrid" type="boolean" value="true"/>
                                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                                 </Property>
@@ -1132,7 +1136,7 @@
                                           <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                                           <Component id="btnViewUser14" min="-2" pref="30" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="jScrollPane2" pref="1423" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane2" pref="1428" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
@@ -1149,9 +1153,9 @@
                                           <Component id="txtSearchChecking" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jScrollPane2" min="-2" pref="709" max="-2" attributes="0"/>
-                                  <EmptySpace pref="51" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane2" min="-2" pref="730" max="-2" attributes="0"/>
+                                  <EmptySpace pref="34" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1237,6 +1241,8 @@
                                     </Column>
                                   </TableColumnModel>
                                 </Property>
+                                <Property name="rowHeight" type="int" value="24"/>
+                                <Property name="showGrid" type="boolean" value="true"/>
                                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                                 </Property>
@@ -1309,7 +1315,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jScrollPane3" pref="1429" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane3" pref="1434" max="32767" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jButton17" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
@@ -1334,9 +1340,9 @@
                                           <Component id="txtSearchReturn" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jScrollPane3" min="-2" pref="708" max="-2" attributes="0"/>
-                                  <EmptySpace pref="52" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane3" min="-2" pref="730" max="-2" attributes="0"/>
+                                  <EmptySpace pref="34" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1422,6 +1428,8 @@
                                     </Column>
                                   </TableColumnModel>
                                 </Property>
+                                <Property name="rowHeight" type="int" value="24"/>
+                                <Property name="showGrid" type="boolean" value="true"/>
                                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                                 </Property>
@@ -1494,7 +1502,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jScrollPane4" alignment="0" pref="1422" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane4" alignment="0" pref="1427" max="32767" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jButton18" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
@@ -1512,7 +1520,7 @@
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
                                       <Component id="jButton18" min="-2" pref="35" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
@@ -1523,9 +1531,9 @@
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jScrollPane4" min="-2" pref="706" max="-2" attributes="0"/>
-                                  <EmptySpace pref="48" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane4" min="-2" pref="730" max="-2" attributes="0"/>
+                                  <EmptySpace pref="34" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1611,6 +1619,8 @@
                                     </Column>
                                   </TableColumnModel>
                                 </Property>
+                                <Property name="rowHeight" type="int" value="24"/>
+                                <Property name="showGrid" type="boolean" value="true"/>
                                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                                 </Property>
@@ -1692,7 +1702,7 @@
                                           <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                                           <Component id="btnViewUser17" min="-2" pref="30" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="jScrollPane5" pref="1423" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane5" pref="1428" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
@@ -1709,8 +1719,8 @@
                                           <Component id="txtSearchDisposal" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jScrollPane5" min="-2" pref="704" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane5" min="-2" pref="730" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -1797,6 +1807,8 @@
                                     </Column>
                                   </TableColumnModel>
                                 </Property>
+                                <Property name="rowHeight" type="int" value="24"/>
+                                <Property name="showGrid" type="boolean" value="true"/>
                                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                                 </Property>
