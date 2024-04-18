@@ -75,8 +75,8 @@ private static final int[] dataAlignment = {SwingConstants.CENTER, SwingConstant
     private static final int[] Widths = {95, 70, 80, 130, 100, 150, 90, 90, 15, 100};
     private static final int[] releaseAlign = {SwingConstants.CENTER, SwingConstants.CENTER, SwingConstants.CENTER,
                                               SwingConstants.CENTER, SwingConstants.CENTER, SwingConstants.CENTER,
-                                              SwingConstants.CENTER, SwingConstants.CENTER, SwingConstants.CENTER, SwingConstants.CENTER};
-    private static final int[] releaseWidth = {60, 15, 80, 130, 100, 170, 60, 90, 15, 90};
+                                              SwingConstants.CENTER, SwingConstants.CENTER, SwingConstants.CENTER, SwingConstants.CENTER, SwingConstants.CENTER};
+    private static final int[] releaseWidth = {30, 30, 100, 80, 140, 100, 180, 60, 90, 15, 90};
     
 
 public static void alignDataInfo(JTable tblDataInfo) {
@@ -113,7 +113,7 @@ public static void alignDataInfo(JTable tblDataInfo) {
         
         // Set font and bold for header
         Font headerFont = header.getFont();
-        header.setFont(headerFont.deriveFont(Font.BOLD, 15));
+        header.setFont(headerFont.deriveFont(Font.BOLD, 18));
 
         for (int i = 0; i < tblStock.getColumnCount() && i < stockAlignment.length; i++) {
             int align = stockAlignment[i];
@@ -137,7 +137,7 @@ public static void alignDataInfo(JTable tblDataInfo) {
         
         // Set font and bold for header
         Font headerFont = header.getFont();
-        header.setFont(headerFont.deriveFont(Font.BOLD, 15)); // Set font size to 18
+        header.setFont(headerFont.deriveFont(Font.BOLD, 18)); // Set font size to 18
 
         for (int i = 0; i < tblRelease.getColumnCount() && i < releaseAlign.length; i++) {
             int align = releaseAlign[i];
@@ -161,7 +161,7 @@ public static void alignDataInfo(JTable tblDataInfo) {
         
         // Set font and bold for header
         Font headerFont = header.getFont();
-        header.setFont(headerFont.deriveFont(Font.BOLD, 15)); // Set font size to 18
+        header.setFont(headerFont.deriveFont(Font.BOLD, 18)); // Set font size to 18
 
         for (int i = 0; i < tblChecking.getColumnCount() && i < alignment.length; i++) {
             int align = alignment[i];
@@ -185,7 +185,7 @@ public static void alignDataInfo(JTable tblDataInfo) {
         
         // Set font and bold for header
         Font headerFont = header.getFont();
-        header.setFont(headerFont.deriveFont(Font.BOLD, 15)); // Set font size to 18
+        header.setFont(headerFont.deriveFont(Font.BOLD, 18)); // Set font size to 18
 
         for (int i = 0; i < tblReturn.getColumnCount() && i < alignment.length; i++) {
             int align = alignment[i];
@@ -209,7 +209,7 @@ public static void alignDataInfo(JTable tblDataInfo) {
         
         // Set font and bold for header
         Font headerFont = header.getFont();
-        header.setFont(headerFont.deriveFont(Font.BOLD, 15)); // Set font size to 18
+        header.setFont(headerFont.deriveFont(Font.BOLD, 18)); // Set font size to 18
 
         for (int i = 0; i < tblRepair.getColumnCount() && i < alignment.length; i++) {
             int align = alignment[i];
@@ -233,7 +233,7 @@ public static void alignDataInfo(JTable tblDataInfo) {
         
         // Set font and bold for header
         Font headerFont = header.getFont();
-        header.setFont(headerFont.deriveFont(Font.BOLD, 15)); // Set font size to 18
+        header.setFont(headerFont.deriveFont(Font.BOLD, 18)); // Set font size to 18
 
         for (int i = 0; i < tblDisposal.getColumnCount() && i < alignment.length; i++) {
             int align = alignment[i];
@@ -1235,6 +1235,7 @@ public static void printDisposal(JTable tblDisposal) {
         jPanel12.setPreferredSize(new java.awt.Dimension(241, 104));
 
         lblChecking.setFont(new java.awt.Font("Rockwell", 1, 50)); // NOI18N
+        lblChecking.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblChecking.setText("0");
 
         jLabel31.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
@@ -1246,15 +1247,16 @@ public static void printDisposal(JTable tblDisposal) {
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel12Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel9)
-                .addGap(86, 86, 86)
-                .addComponent(lblChecking, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE)
-                .addGap(64, 64, 64))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel31)
+                .addContainerGap()
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addComponent(jLabel9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblChecking, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGap(0, 120, Short.MAX_VALUE)
+                        .addComponent(jLabel31)))
                 .addGap(18, 18, 18))
         );
         jPanel12Layout.setVerticalGroup(
@@ -1264,19 +1266,20 @@ public static void printDisposal(JTable tblDisposal) {
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addGap(47, 47, 47)
                         .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE))
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblChecking)
-                        .addGap(50, 50, 50)))
+                        .addGap(42, 42, 42)))
                 .addComponent(jLabel31)
-                .addGap(27, 27, 27))
+                .addGap(35, 35, 35))
         );
 
         jPanel14.setBackground(new java.awt.Color(106, 177, 135));
         jPanel14.setPreferredSize(new java.awt.Dimension(241, 104));
 
         lblRepair.setFont(new java.awt.Font("Rockwell", 1, 50)); // NOI18N
+        lblRepair.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblRepair.setText("0");
 
         jLabel33.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
@@ -1291,11 +1294,11 @@ public static void printDisposal(JTable tblDisposal) {
             .addGroup(jPanel14Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
-                .addComponent(lblRepair, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblRepair, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(172, Short.MAX_VALUE)
                 .addComponent(jLabel33)
                 .addGap(26, 26, 26))
         );
@@ -1317,6 +1320,7 @@ public static void printDisposal(JTable tblDisposal) {
         jPanel20.setPreferredSize(new java.awt.Dimension(241, 104));
 
         lblDisposal.setFont(new java.awt.Font("Rockwell", 1, 50)); // NOI18N
+        lblDisposal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblDisposal.setText("0");
 
         jLabel39.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
@@ -1330,13 +1334,14 @@ public static void printDisposal(JTable tblDisposal) {
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
-                .addComponent(lblDisposal, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel39)
+                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel20Layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblDisposal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel20Layout.createSequentialGroup()
+                        .addGap(0, 140, Short.MAX_VALUE)
+                        .addComponent(jLabel39)))
                 .addGap(16, 16, 16))
         );
         jPanel20Layout.setVerticalGroup(
@@ -1359,6 +1364,7 @@ public static void printDisposal(JTable tblDisposal) {
         jPanel21.setPreferredSize(new java.awt.Dimension(241, 104));
 
         lblReturn.setFont(new java.awt.Font("Rockwell", 1, 50)); // NOI18N
+        lblReturn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblReturn.setText("0");
 
         jLabel37.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
@@ -1373,11 +1379,11 @@ public static void printDisposal(JTable tblDisposal) {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
-                .addComponent(lblReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(69, 69, 69))
+                .addGap(18, 18, 18)
+                .addComponent(lblReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(166, Short.MAX_VALUE)
                 .addComponent(jLabel37)
                 .addGap(30, 30, 30))
         );
@@ -1404,6 +1410,7 @@ public static void printDisposal(JTable tblDisposal) {
         jPanel19.setPreferredSize(new java.awt.Dimension(241, 104));
 
         lblTotalqty.setFont(new java.awt.Font("Rockwell", 1, 50)); // NOI18N
+        lblTotalqty.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTotalqty.setText("0");
 
         jLabel28.setFont(new java.awt.Font("Rockwell", 1, 37)); // NOI18N
@@ -1417,17 +1424,20 @@ public static void printDisposal(JTable tblDisposal) {
         jPanel19Layout.setHorizontalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel19Layout.createSequentialGroup()
-                .addGap(105, 105, 105)
+                .addContainerGap()
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel29)
-                    .addGroup(jPanel19Layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblTotalqty, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(93, 93, 93))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
+                                .addComponent(jLabel29)
+                                .addGap(105, 105, 105))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
+                                .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(132, 132, 132))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
+                        .addComponent(lblTotalqty, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())))
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1445,6 +1455,7 @@ public static void printDisposal(JTable tblDisposal) {
         jPanel28.setPreferredSize(new java.awt.Dimension(241, 104));
 
         lblRelease.setFont(new java.awt.Font("Rockwell", 1, 50)); // NOI18N
+        lblRelease.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblRelease.setText("0");
 
         jLabel38.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
@@ -1459,11 +1470,11 @@ public static void printDisposal(JTable tblDisposal) {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel28Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
-                .addComponent(lblRelease, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(76, 76, 76))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblRelease, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel28Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(148, Short.MAX_VALUE)
                 .addComponent(jLabel38)
                 .addGap(29, 29, 29))
         );
@@ -1520,7 +1531,7 @@ public static void printDisposal(JTable tblDisposal) {
                     .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, 281, Short.MAX_VALUE)
                     .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, 281, Short.MAX_VALUE)
                     .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, 281, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                 .addGroup(dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 269, Short.MAX_VALUE)
                     .addComponent(jPanel21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 269, Short.MAX_VALUE)
@@ -1804,7 +1815,7 @@ public static void printDisposal(JTable tblDisposal) {
 
         tabSuperadmin.setTabPlacement(javax.swing.JTabbedPane.BOTTOM);
 
-        tblStock.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        tblStock.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         tblStock.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null},
@@ -1813,7 +1824,7 @@ public static void printDisposal(JTable tblDisposal) {
                 {null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "ID", "Serial No.", "Item  Name", "Model", "Specification", "Category", "Brand", "Qty."
+                "ID", "Serial No.", "ItemName", "Model", "Specification", "Category", "Brand", "Qty."
             }
         ) {
             Class[] types = new Class [] {
@@ -1904,7 +1915,7 @@ public static void printDisposal(JTable tblDisposal) {
 
         tabSuperadmin.addTab("tab1", jPanel13);
 
-        tblRelease.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        tblRelease.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         tblRelease.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null, null},
@@ -2013,7 +2024,7 @@ public static void printDisposal(JTable tblDisposal) {
 
         tabSuperadmin.addTab("tab6", jPanel2);
 
-        tblChecking.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        tblChecking.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         tblChecking.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null},
@@ -2119,7 +2130,7 @@ public static void printDisposal(JTable tblDisposal) {
 
         tabSuperadmin.addTab("tab2", jPanel15);
 
-        tblReturn.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        tblReturn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         tblReturn.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null},
@@ -2225,7 +2236,7 @@ public static void printDisposal(JTable tblDisposal) {
 
         tabSuperadmin.addTab("tab3", jPanel16);
 
-        tblRepair.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        tblRepair.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         tblRepair.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null},
@@ -2333,7 +2344,7 @@ public static void printDisposal(JTable tblDisposal) {
 
         tabSuperadmin.addTab("tab4", jPanel17);
 
-        tblDisposal.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        tblDisposal.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         tblDisposal.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null},
@@ -2849,7 +2860,7 @@ public static void printDisposal(JTable tblDisposal) {
             String sql = "SELECT rel.ReleaseID, rel.ItemID, rel.Location, s.SerialNo, s.ItemName, s.Model, s.Specification, s.Category, s.Brand, rel.Qty AS ReleasedQty, rel.Date " +
                          "FROM Release rel " +
                          "LEFT JOIN Stock s ON rel.ItemID = s.ItemID " +
-                         "WHERE rel.Location LIKE? s.ItemName LIKE ? OR s.SerialNo LIKE ? OR s.Model LIKE ? OR s.Category LIKE ? OR s.Brand LIKE ?";
+                         "WHERE rel.Location LIKE? OR s.ItemName LIKE ? OR s.SerialNo LIKE ? OR s.Model LIKE ? OR s.Category LIKE ? OR s.Brand LIKE ?";
             pst = conn.prepareStatement(sql);
             pst.setString(1, "%" + searchText + "%"); // Search Location
             pst.setString(2, "%" + searchText + "%"); // Search ItemName
